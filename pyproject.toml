@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "justifair"
+version = "0.1.0"
+description = "Bias and Fairness Auditing Toolkit for AI-Based Legal Decision Support"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Sambhav Gupta" }
+]
+dependencies = [
+    "fairlearn>=0.10.0",
+    "scikit-learn>=1.4.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.29.0"
+]
